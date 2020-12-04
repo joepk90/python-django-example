@@ -19,4 +19,5 @@ def index(request):
 
 
 def detail(request, movie_id):
-    return HttpResponse(movie_id)
+    movie = Movie.objects.get(id=movie_id)
+    return render(request, 'movies/detail.html', {'movie': movie})
