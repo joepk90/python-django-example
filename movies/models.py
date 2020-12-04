@@ -6,6 +6,10 @@ from django.utils import timezone
 class Genre(models.Model):
     name = models.CharField(max_length=255)
 
+    # diaplay the name of the genre, instead of the genre object
+    def __str__(self):
+        return self.name
+
 
 class Movie(models.Model):
     title = models.CharField(max_length=255)
