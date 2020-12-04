@@ -10,7 +10,9 @@ from . import views
 # <> = url parameters
 # prefixing with int: will prevent the page from returing if the paramter provided is not an int
 
+app_name = 'movies'
+
 urlpatterns = [
-    path('', views.index, name='movies_index'),
-    path('<int:movie_id>', views.detail, name='movies_detail')
+    path('', views.index, name='index'),
+    path('<int:movie_id>', views.detail, name='detail')
 ]
