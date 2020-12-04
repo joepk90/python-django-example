@@ -7,3 +7,4 @@ class MovieResource(ModelResource):
     class Meta:
         queryset = Movie.objects.all()  #  lazy object
         resource_name = 'movies'
+        excludes = ["date_created"]
