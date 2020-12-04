@@ -25,7 +25,9 @@ SECRET_KEY = '_!av!tj54$0jn1-*&hhf8cnbu9qe)ulskm)8_$cle*$$_e2e_o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "shielded-caverns-03469.herokuapp.com"
+]
 
 
 # Application definition
